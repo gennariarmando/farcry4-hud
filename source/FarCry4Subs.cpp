@@ -1,5 +1,6 @@
 #include <plugin.h>
 #include "game_sa\CFont.h"
+#include "game_sa\CSprite2d.h"
 #include "FarCry4Subs.h"
 
 void FarCry4Subs::InjectPatches() {
@@ -7,6 +8,11 @@ void FarCry4Subs::InjectPatches() {
 }
 
 void FarCry4Subs::DrawSubtitles(float x, float y, char *str) {
+    // Custom background
+    CSprite2d::DrawRect(CRect(SCREEN_COORD_CENTER_X - SCREEN_MULTIPLIER(-5.0f + CFont::GetStringWidth(str, 1, 0)) / 2, SCREEN_COORD_BOTTOM(132.5f),
+                              SCREEN_COORD_CENTER_X - SCREEN_MULTIPLIER(-5.0f + CFont::GetStringWidth(str, 1, 0)) / 2 + SCREEN_MULTIPLIER(-5.0f + CFont::GetStringWidth(str, 1, 0)),
+                              SCREEN_COORD_BOTTOM(132.5f) + SCREEN_MULTIPLIER(40.0f)), CRGBA(0, 0, 0, 100));
+
     CFont::SetBackground(0, 0);
     CFont::SetAlignment(ALIGN_CENTER);
     CFont::SetProp(true);

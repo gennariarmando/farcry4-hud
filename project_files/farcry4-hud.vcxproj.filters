@@ -23,6 +23,9 @@
     <ClCompile Include="..\source\FarCry4PlayerInfo.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\FarCry4Texture.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\FarCry4Radar.h">
@@ -32,6 +35,12 @@
       <Filter>source</Filter>
     </ClInclude>
     <ClInclude Include="..\source\FarCry4PlayerInfo.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Utility.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\FarCry4Texture.h">
       <Filter>source</Filter>
     </ClInclude>
   </ItemGroup>

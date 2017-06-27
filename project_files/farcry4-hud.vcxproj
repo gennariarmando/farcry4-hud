@@ -15,11 +15,14 @@
     <ClCompile Include="..\source\FarCry4PlayerInfo.cpp" />
     <ClCompile Include="..\source\FarCry4Radar.cpp" />
     <ClCompile Include="..\source\FarCry4Subs.cpp" />
+    <ClCompile Include="..\source\FarCry4Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\FarCry4PlayerInfo.h" />
     <ClInclude Include="..\source\FarCry4Radar.h" />
     <ClInclude Include="..\source\FarCry4Subs.h" />
+    <ClInclude Include="..\source\FarCry4Texture.h" />
+    <ClInclude Include="..\source\Utility.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
